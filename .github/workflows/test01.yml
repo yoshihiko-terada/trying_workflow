@@ -1,0 +1,10 @@
+name: Test01
+on:
+  push:
+    branches:
+     - 'refs/tags/*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Done'
