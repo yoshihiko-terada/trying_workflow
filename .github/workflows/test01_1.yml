@@ -1,8 +1,8 @@
-name: Test03
+name: Test PUSH BRANCH
 on:
   push:
     branches:
-      - 'refs/tags/v[0-9]+.[0-9]+.[0-9]+'
+      - 'refs/tags/*'
 jobs:
   build:
     runs-on: ubuntu-latest

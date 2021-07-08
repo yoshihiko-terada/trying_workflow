@@ -1,0 +1,10 @@
+name: Test CREATE TAG
+on:
+  create:
+    tags:
+      - '*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Done'
